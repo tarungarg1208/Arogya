@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GovernmentHealthSchemesInformationViewer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ID_GovtHealthSchemesInfoViewer_SchemeName_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SCHEME NAME"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textStyle="bold|italic"/>
+        <TextView
+            android:id="@+id/ID_GovtHealthSchemesInfoViewer_SchemeInfo_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SCHEME INFORMATION"
+            android:textSize="16dp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+</ScrollView>

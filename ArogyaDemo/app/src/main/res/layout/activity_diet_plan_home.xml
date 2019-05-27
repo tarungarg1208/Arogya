@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DietPlanHome"
+    android:background="@drawable/background_dietplan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ID_DietPlan_BMIHeading_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="UNDERWEIGHT/NORMAL/OVERWEIGHT/OBESE"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@color/silver"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Calorie Req:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ID_DietPlan_CalorieReq_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ID_DietPlan_GainLose1Title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="TO GAIN/LOOSE .45Kg/Week"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@color/fuchsia"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie Req:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ID_DietPlan_Calorie1Value_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ID_DietPlan_GainLose2Title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="TO GAIN/LOOSE .90Kg/Week"
+            android:textStyle="bold|italic"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:background="@color/fuchsia"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie Req:"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ID_DietPlan_Calorie2Value_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calorie"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/ID_DietPlan_GainLose1_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****1Button"
+            android:layout_gravity="center"
+            android:onClick="onGainLose1"/>
+        <Button
+            android:id="@+id/ID_DietPlan_GainLose2_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="****2Button"
+            android:layout_gravity="center"
+            android:onClick="onGainLose2"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

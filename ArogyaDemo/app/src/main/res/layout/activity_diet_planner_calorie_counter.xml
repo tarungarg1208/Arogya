@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bluemedgradient"
+    tools:context=".DietPlannerCalorieCounter">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_white">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Calorie Req:"
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/ID_DietPlanner_CalorieCount_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calorie Count"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:text="Calorie Count(With \n Selected Food Items):"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/ID_DietPlanner_CalorieCountFoodItems_TV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:text="NA"
+                            android:gravity="center_vertical"
+                            android:textSize="18dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="18dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/background_5_yellow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="FOOD ITEM"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="100dp"
+                        android:gravity="center_vertical"
+                        android:text="Calorie Count     "
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Qty"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/apple" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Apple(Small)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie0_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="80"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty0_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/banana" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Banana(Medium)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie1_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="101"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty1_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/grape" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Grapes(Pc)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie2_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="2"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty2_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/orange" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Orange(Pc)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie3_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="71"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty3_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/pear" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Pear(Pc)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie4_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="100"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty4_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/strawberry" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Strawberry(Pc)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie5_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="53"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty5_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/watermelon" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Watermelon(Pc)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie6_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="45"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty6_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/cucumber" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Cucumber"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie7_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="30"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty7_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/broccoli" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Broccoli"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie8_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="40"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty8_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/carrots" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Carrot"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie9_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="45"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty9_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/eggplant" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Egg Plant"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie10_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="38"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty10_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/tomato" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Tomato"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie11_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="29"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty11_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/lettuce" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Lettuce"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie12_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="7"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty12_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/chicken" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Chicken(Slice)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie13_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="95"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty13_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/fish" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Fish(2oz)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie14_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="80"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty14_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/pork" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Pork(Slice)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie15_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="130"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty15_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="18dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/lamb" />
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="Lamb(1 Smallchop)"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <TextView
+                                android:id="@+id/ID_DietPlanner_Calorie16_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="112"
+                                android:textSize="18sp"
+                                android:textStyle="bold|italic" />
+
+                            <EditText
+                                android:id="@+id/ID_DietPlanner_Qty16_TV"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:inputType="number"/>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

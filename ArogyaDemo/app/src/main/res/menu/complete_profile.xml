@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ID_Options_CompleteProfile"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Complete Profile"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/ID_Options_ViewProfile"
+        android:icon="@drawable/person_login"
+        android:title="View Profile"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/ID_Options_LogOut"
+        android:icon="@drawable/icon_power_24dp"
+        android:title="Sign Out"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/ID_Options_AboutUs"
+        android:title="About Us" />
+    <item android:id="@+id/ID_Options_ContactUs"
+        android:title="Contact Us" />
+    <item android:id="@+id/ID_Options_FAQ"
+        android:title="FAQs" />
+</menu>

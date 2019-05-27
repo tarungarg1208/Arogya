@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BMI">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ID_BMI_weight_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:inputType="numberDecimal"
+                android:hint="Enter Weight(in Kg.)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ID_BMI_height_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:inputType="numberDecimal"
+                android:hint="Enter Height(in cms.)" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/ID_BMI_Calculate_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_gravity="center"
+            android:onClick="calculateBMI"
+            android:background="@drawable/rounded_corner_2"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:id="@+id/ID_BMI_LinearAfterCalculate_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/ID_BMI_BMIResult_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center"
+                android:textColor="@color/ic_launcher_background"
+                android:background="@android:color/background_dark" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TIPS"
+                android:padding="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/ID_BMI_TIPS_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TIPS HERE"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

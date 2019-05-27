@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.arogyademo">
+
+    <dist:module dist:instant="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon_new"
+        android:label="Arogya"
+        android:roundIcon="@mipmap/app_icon_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OCR_WebVIew" android:parentActivityName=".OCR_TextSelector" android:label="Web Search"></activity>
+        <activity
+            android:name=".OCR_TextSelector"
+            android:label="Search"
+            android:parentActivityName=".OCR" />
+        <activity
+            android:name=".OCR"
+            android:label="OCR Home"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".AppIntroduction"
+            android:label="About Us"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".FAQ"
+            android:label="FAQs"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".SeasonalDiseasesInfoViewer"
+            android:label="Seasonal Diseases"
+            android:parentActivityName=".SeasonalDiseases" />
+        <activity
+            android:name=".MedicineSearchInformationViewer"
+            android:label="Medicine Information Viewer"
+            android:parentActivityName=".MedicineSearch" />
+        <activity
+            android:name=".SeasonalDiseases"
+            android:label="Seasonal Diseases"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".MedicineSearch"
+            android:label="Medicine Search"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".DonorAndDonee"
+            android:label="Donor/Acceptor"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".DietPlannerCalorieCounter"
+            android:label="Calorie Counter"
+            android:parentActivityName=".DietPlanHome" />
+        <activity
+            android:name=".DietPlanHome"
+            android:label="Plan Your Diet"
+            android:parentActivityName=".HealthCheckupHome" />
+        <activity
+            android:name=".ExerciseWorkoutEdit"
+            android:parentActivityName=".ExerciseStart"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ExerciseStart"
+            android:parentActivityName=".ExerciseHome"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ExerciseHome"
+            android:parentActivityName=".ExerciseSplashScreen"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ExerciseSplashScreen"
+            android:parentActivityName=".HealthTips"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".HealthCheckupHome"
+            android:label="Know Your Health"
+            android:parentActivityName=".HealthTips" />
+        <activity
+            android:name=".GovernmentHealthSchemesInformationViewer"
+            android:label="Govt. Health Schemes"
+            android:parentActivityName=".GovernmentHealthSchemesList" />
+        <activity
+            android:name=".GovernmentHealthSchemesList"
+            android:label="Govt. Health Schemes"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".FlashCardFunctionality"
+            android:label="Flash Cards"
+            android:parentActivityName=".HomePage" />
+        <activity android:name=".NearbyHospitalSearch" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".EmergencyCare"
+            android:parentActivityName=".HomePage"
+            android:label="Emergency Care"/>
+        <activity
+            android:name=".UpdateUserProfile"
+            android:parentActivityName=".HomePage"
+            android:label="Update Profile"/>
+        <activity
+            android:name=".OnlineAppointmentBooking"
+            android:parentActivityName=".HomePage"
+            android:label="Online Appointment Booking"/>
+        <activity android:name=".SignUpWithEmail" />
+        <activity
+            android:name=".AfterLoginGestureActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".AfterFrontPage"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".DiseaseListInformationViewer"
+            android:label="Disease Encyclopedia"
+            android:parentActivityName=".DiseaseList" />
+        <activity
+            android:name=".DiseaseList"
+            android:label="Disease Encyclopedia"
+            android:parentActivityName=".HomePage" />
+        <activity android:name=".CreateNewPassword" />
+        <activity
+            android:name=".RecoverPassword"
+            android:label="Recover Password"
+            android:parentActivityName=".SignInSignUpActivity" />
+        <activity
+            android:name=".BMI"
+            android:label="Body-Mass-Index"
+            android:parentActivityName=".HealthTips" />
+        <activity
+            android:name=".HealthTips"
+            android:label="Health Tips and Tricks"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".ViewUserProfile"
+            android:parentActivityName=".HomePage"
+            android:label="View Profile"/>
+        <activity
+            android:name=".UpdateUserOld"
+            android:parentActivityName=".HomePage" />
+        <activity
+            android:name=".SignInSignUpActivity"
+            android:label="@string/title_activity_sign_in_sign_up"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".FrontPage"
+            android:label="About Us"/>
+        <activity
+            android:name=".FrontPage"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="Home"
+            android:parentActivityName=".FrontPage" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.arogyademo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

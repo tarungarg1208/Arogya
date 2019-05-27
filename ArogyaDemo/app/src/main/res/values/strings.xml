@@ -1,0 +1,546 @@
+<resources>
+    <string name="app_name">Arogya</string>
+    <string name="title_activity_sign_in_sign_up">Arogya</string>
+    <string name="tab_text_1">Sign In</string>
+    <string name="tab_text_2">Sign Up</string>
+    <string name="about_us">About Us</string>
+    <string name="login">Sign In/Sign Up</string>
+    <string name="developer_help_message">Arogya Developer Helpline</string>
+    <string-array name="developer_phone">
+        <item>+91-9760842034</item>
+        <item>+91-8800560865</item>
+        <item>+91-9560618002</item>
+    </string-array>
+    <string-array name="developer_email">
+        <item>tarun.mcs17.du@gmail.com</item>
+        <item>rohit.mcs17.du@gmail.com</item>
+        <item>sakshi.mcs17.du@gmail.com</item>
+    </string-array>
+    <string-array name="health_schemes">
+        <item>Rashtiya Swasthiya Bima Yojana (RSBY)</item>
+        <item>Employment State Insurance Scheme (ESIS)</item>
+        <item>Central Government Health Scheme (CGHS)</item>
+        <item>Aam Aadmi Bima Yojana (AABY)</item>
+        <item>Janashree Bima Yojana (JBY)</item>
+        <item>Universal Health Insurance Scheme (UHIS)</item>
+    </string-array>
+    <string-array name="health_schemes_info">
+        <item>RSBY ( Rashtriya Swasthiya Bima Yojana)  has been launched by Ministry of Labour and Employment, Government of India to provide health insurance coverage for Below Poverty Line (BPL) families. The objective of RSBY is to provide protection to BPL households from financial liabilities arising out of health shocks that involve hospitalization. Beneficiaries under RSBY are entitled to hospitalization coverage up to Rs. 30,000/- for most of the diseases that require hospitalization. Government has even fixed the package rates for the hospitals for a large number of interventions. Pre-existing conditions are covered from day one and there is no age limit. Coverage extends to five members of the family which includes the head of household, spouse and up to three dependents. Beneficiaries need to pay only Rs. 30/- as registration fee while Central and State Government pays the premium to the insurer selected by the State Government on the basis of a competitive bidding.</item>
+        <item>Employees’ State Insurance Scheme of India, is a multidimensional social security system tailored to provide socio-economic protection to worker population and their dependants covered under the scheme. Besides full medical care for self and dependants, that is admissible from day one of insurable employment, the insured persons are also entitled to a variety of cash benefits in times of physical distress due to sickness, temporary or permanent disablement etc. resulting in loss of earning capacity, the confinement in respect of insured women, dependants of insured persons who die in industrial accidents or because of employment injury or occupational hazard are entitled to a monthly pension called the dependants benefit.</item>
+        <item>The “Central Government Health Scheme” (CGHS) provides comprehensive health care facilities for the Central Govt. employees and pensioners and their dependents residing in CGHS covered cities. Started in New Delhi in 1954, Central Govt. Health Scheme is now  in operation in Allahabad, Ahemdabad ,Bangalore ,Bhubhaneshwar ,Bhopal ,Chandigarh , Chennai ,Delhi , Dehradun ,Guwahati ,Hyderabad, Jaipur , Jabalpur , Kanpur , Kolkatta , Lucknow , Meerut , Mumbai , Nagpur , Patna , Pune , Ranchi , Shillong , Trivandrum and Jammu. The Central Govt. Health Scheme provides  comprehensive healthcare to the CGHS Beneficiaries in India.  The medical facilities are provided through Wellness Centres (previously  referred to as  CGHS Dispensaries) /polyclinics under  Allopathic, Ayurveda, Yoga,Unani, Sidha and  Homeopathic systems of medicines.</item>
+        <item>Aam admi bima yojana, a Social Security Scheme for rural landless household was launched on 2nd October, 2007. The head of the family or one earning member in the family of such a household is covered under the scheme. The premium of Rs.200/- per person per annum is shared equally by the Central Government and the State Government. The member to be covered should be aged between 18 and 59 years.</item>
+        <item>Janashree Bima Yojana (JBY) was launched on 10th August 2000. The Scheme replaced Social Security Group Insurance Scheme (SSGIS) and Rural Group Life Insurance Scheme (RGLIS). 45 occupational groups have been covered under this scheme. It provides life insurance protection to people who are below poverty line or marginally above poverty line. Persons between aged 18 years and 59 years and who are the members of the identified 45 occupational groups are eligible to be covered under the Scheme</item>
+        <item>The four public sector general insurance companies have been implementing Universal Health Insurance Scheme for improving the access of health care to poor families. The scheme provides for reimbursement of medical expenses upto Rs.30,000/- towards hospitalization floated amongst the entire family, death cover due to an accident @ Rs.25,000/- to the earning head of the family and compensation due to loss of earning of the earning member @ Rs.50/- per day upto maximum of 15 days. The Universal Health Insurance Scheme (UHIS) has been redesigned targeting only the BPL families. The premium subsidy has been enhanced from Rs.100 to Rs.200 for an individual, Rs.300 for a family of five and Rs.400 for a family of seven, without any reduction in benefits.</item>
+    </string-array>
+    <string-array name="doctor_specialties">
+        <item>Select Speciality</item>
+        <item>Surgeon</item>
+        <item>Psychiatrist</item>
+        <item>Cardiologist</item>
+        <item>Dermatologist</item>
+        <item>Neurologist</item>
+        <item>Physician</item>
+        <item>Radiologist</item>
+        <item>Oncologist</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="time_slot">
+        <item>Select Time Slot</item>
+        <item>10:00-10:59</item>
+        <item>11:00-11:59</item>
+        <item>12:00-12:59</item>
+        <item>13:00-13:59</item>
+        <item>14:00-14:59</item>
+        <item>15:00-15:59</item>
+        <item>16:00-16:59</item>
+        <item>17:00-18:00</item>
+    </string-array>
+    <string-array name="bmi">
+        <item>A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.</item>
+        <item>A BMI of 18.5–24.9 indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.</item>
+        <item>A BMI of 25–29.9 indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.</item>
+        <item>A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Select State</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="disease_list">
+        <item>Alzheimer\'s Disease</item>
+        <item>Asthma</item>
+        <item>Common Cold</item>
+        <item>Chikungunya</item>
+        <item>Typhoid</item>
+        <item>Malaria</item>
+        <item>Gastroenteritis</item>
+        <item>Dehydration</item>
+        <item>Heat Stroke</item>
+        <item>Common Cold and Fever</item>
+        <item>Tonsil Infection</item>
+        <item>Lice</item>
+        <item>Acute Ear Infection</item>
+        <item>Bronchiolitis</item>
+        <item>Stomach Flu (Viral Gastroenteritis)</item>
+        <item>Hand, Foot and Mouth Disease</item>
+        <item>Chicken Pox</item>
+    </string-array>
+    <string-array name="disease_list_info">
+        <item>
+            Alzheimer\’s disease is the most common form of dementia. The frequency of Alzheimer\'s disease is increasing as the New Zealand population ages.  It has been estimated that the number of New Zealanders living with Alzheimer\'s disease will reach 70,000 by 2031 (from 28,000 in 2006). There is no cure for Alzheimer\'s disease, nor any proven ways to prevent its onset.  Treatment focuses on support and managing symptoms to maximize a person\'s ability to function and maintain independence for as long as possible. The condition is ultimately fatal.
+\n\nCauses\n
+Genetic factors, such as the presence of, or changes to, certain genes.Environmental factors, such as long-term exposure to some environmental solvents (eg: pesticides, glues and paints) or infection with certain viruses or bacteria
+Lifestyle factors, such as a lack of exercise, poor-quality sleep and a diet lacking fruit and vegetables.\n
+1.Increasing age\n
+2.Down syndrome\n
+3.History of a head injury\n
+4.Risk factors for blood vessel disease such as smoking\n
+5.Family history of Alzheimer\'s disease\n
+\n\nSigns and symptoms\n
+The degenerative changes that occur with Alzheimer\'s disease affect the areas of the brain that control thought, memory and language resulting in gradual signs and symptoms related to a person\’s behaviour and mental function. Often, physical functions such as bowel and bladder control are also affected.\n
+With Alzheimer\’s disease there is great individual variability as to the nature of symptoms experienced and the speed at which deterioration occurs. The types of behaviour change and the length of time symptoms are present are different for each person. The symptoms of Alzheimer\'s disease typically develop quite slowly. The time between the onset of the disease and death can range from five to 20 years.\n
+Symptoms commonly experienced during the early stages of Alzheimer\'s disease include:\n
+1.Mild forgetfulness – especially short-term memory loss\n
+2.Mood changes, including irritability and anxiety\n
+3.Difficulty processing new information and learning new things\n
+4.Loss of spontaneity and initiative\n
+\n\nMedications\n
+Medications such as sleeping tablets and tranquillisers may help to control symptoms such as sleeplessness and agitation. However, they often cause increased confusion, so their use should be limited.\n
+A group of medications called cholinesterase inhibitors have shown some effectiveness in slowing the progression of the condition in some people. These medications help prevent the breakdown of acetylcholine, a neurotransmitter responsible for memory. Cholinesterase inhibitor medications that are available in New Zealand include donepezil, rivastigmine and galantamine.\n
+More recently, another drug - memantine - has become available in New Zealand.  Memantine works in a different way to the cholinesterase inhibitors, aiming to prevent the entry of an excess amount of calcium into brain cells.  Higher than normal levels of calcium in the brain cells causes damage to them and also prevents them from receiving signals from other brain cells.
+\n\nPrevention\n
+There are no proven ways to prevent the development of Alzheimer\'s disease.  However, there is epidemiological evidence to suggest that leading a healthy lifestyle can reduce the risk of Alzheimer\'s disease.  Regular physical activity and exercise may have a general protective effect on brain health and may slow progression of Alzheimer\'s disease.  Although there are no specific dietary specifications for Alzheimer\'s, a Mediterranean-style diet (ie: plant foods such as vegetables, fruits, beans, whole grains, nuts, olives and olive oil, along with some cheeses, yoghurt, fish, poultry and eggs) may reduce the risk of Alzheimer\'s disease, and has the added benefit of lowering cardiovascular disease and type 2 diabetes risk.
+        </item>
+        <item>
+            Asthma is a chronic condition in which the airways that carry air to the lungs are inflamed and narrowed.Inflamed airways are very sensitive, and they tend to react to things in the environment called triggers, such as substances that are inhaled. When the airways react, they swell and narrow even more, and also produce extra mucus, all of which make it harder for air to flow to the lungs. The muscles around the airways also tighten, which further restricts air flow.
+\n\nCauses\n
+The underlying cause of asthma is not known, but it\'s thought to be due to a combination of genetic and environmental factors. People with asthma may have genetic risk factors that make them more susceptible to the disease, and certain environmental factors, such as exposure to allergens or certain viral infections in infancy, may increase the risk of developing the disease, according to the National Heart, Lung and Blood Institute (NHLBI).
+\nSymptoms of asthma can be caused by triggers. Common asthma triggers include: tobacco smoke, dust mites, air pollution, pollen, mold, respiratory infections, physical activity, cold air and allergic reactions to some foods.
+            \n\nSigns and symptoms\n
+When the airways react to asthma triggers, people can experience what\'s called an asthma flare-up or asthma attack. Symptoms of an asthma attack include: coughing, chest tightness, wheezing and trouble breathing, according to the Centers for Disease Control and Prevention.
+            \n\nMedications\n
+There are two types of medications to treat asthma: quick-relief medications and long-term medications.
+\nQuick-relief medications provide relief from acute asthma symptoms. A common quick-relief medication is inhaled short-acting beta2-agonists, which help relax muscles around the airways, allowing more air to flow through them. People with asthma should have a quick-relief inhaler with them at all times to case they need it, according to the NHLBI.
+\nLong-term medications are typically taken daily to help prevent asthma symptoms from starting in the first place. A common medication is inhaled corticosteroids, which reduce airway inflammation and make airways less sensitive. Other long-term medications include omalizumab, a shot given one or two times a month to prevent the body from reacting to asthma triggers, and inhaled long-acting beta2-agonists, which help open airways, according to NHLBI.
+If patients are taking long-term medications, they should meet with their doctor frequently to assess how well the medications are working, or if the dose needs to be adjusted, Beuther said.
+It\'s important that people who are taking long-term medications do not suddenly stop taking the medications if they feel well, because symptoms can return, Beuther said. People who consistently take their medication end up taking less over the long term because their condition improves, and the dose can be lowered, he said.
+\n\nPrevention\n
+            While there\'s no way to prevent asthma, by working together, you and your doctor can design a step-by-step plan for living with your condition and preventing asthma attacks.
+\n1.Follow your asthma action plan. With your doctor and health care team, write a detailed plan for taking medications and managing an asthma attack. Then be sure to follow your plan.Asthma is an ongoing condition that needs regular monitoring and treatment. Taking control of your treatment can make you feel more in control of your life in general.
+\n2.Get vaccinated for influenza and pneumonia. Staying current with vaccinations can prevent flu and pneumonia from triggering asthma flare-ups.
+\n3.Identify and avoid asthma triggers. A number of outdoor allergens and irritants — ranging from pollen and mold to cold air and air pollution — can trigger asthma attacks. Find out what causes or worsens your asthma, and take steps to avoid those triggers.
+
+        </item>
+        <item>
+Getting a cold has nothing to do with being cold or chilled and there is no scientific evidence that ‘feeding a cold’ (or ‘starving a fever’) makes the slightest difference to how long it lasts.
+\n\nCauses\n
+The common cold spread is when an infected person talks, coughs or sneezes small droplets containing infectious agents into the air. The droplets in the air may be breathed in by those nearby. The common cold is also spread by indirect contact with hands, tissues or other articles soiled by nose and throat discharges.\n
+Newborn babies are protected for about the first 6 months of life by antibodies from their mothers. After this, young children are very susceptible to colds because they haven’t built up immunity, they have close contact with adults and other children, they cannot practice good personal hygiene and they have tiny nose and ear passages which are easily blocked.\n
+It is not abnormal for children to have five or more colds a year.
+\n\nSigns and symptoms\n
+1.runny nose
+\n2.sneezing
+\n3.coughing
+\n4.mild sore throat
+\n5.watery eyes
+\n6.feeling unwell.
+\n\nMedications\n
+There is no specific antiviral treatment against the viruses which cause colds. Paracetamol and other medications available from pharmacies may provide relief of symptoms. Aspirin should not be given to children under 12 years of age unless specifically recommended by a doctor.
+\n\nPreventions\n
+1.Exclusion from childcare, preschool, school or work is not necessary, but a person with a cold should stay home until he or she feels well.
+\n2.Wash hands after contact with soiled tissues or with nose and throat discharges.
+        </item>
+        <item>
+Chikungunya is a viral disease (genus Alphavirus) which is transmitted to humans by infected mosquitoes – including Aedes aegypti and Aedes albopictus. The name chikungunya originates from a verb in the Kimakonde language, meaning \'to become contorted\'. This refers to the \'stooped\' appearance of those suffering with joint pain.
+\n\nCauses\n
+Humans and other primates are the natural hosts for the chikungunya virus. The virus is spread to humans by the bite of an infected female Aedes species mosquito – Aedes aegypti or Aedes albopictus. These are the same tropical and sub-tropical mosquitoes that carry the dengue virus.
+\n\nSigns and symptoms\n
+1.Most people infected with chikungunya virus will develop some symptoms.
+\n2.Symptoms usually begin 3–7 days after being bitten by an infected mosquito.
+\n3.The most common symptoms are fever and joint pain.
+\n4.Other symptoms may include headache, muscle pain, joint swelling, or rash.
+\n5.Chikungunya disease does not often result in death, but the symptoms can be severe and disabling.
+\n6.Most patients feel better within a week. In some people, the joint pain may persist for months.
+\n\nMedications\n
+There are no specific treatments for chikungunya. There is no vaccine currently available. Chikungunya is treated symptomatically, usually with bed rest, fluids, and medicines to relieve symptoms of fever and aching such as ibuprofen, naproxen, acetaminophen, or paracetamol. Aspirin should be avoided. Infected persons should be protected from further mosquito exposure during the first few days of the illness so they can not contribute to the transmission cycle. Since chikungunya is cured by immune system in almost all cases there is no need to worry.\n
+Chloroquine is gaining ground as a possible treatment for the symptoms associated with chikungunya, and as an anti-inflammatory agent to combat the arthritis associated with chikungunya virus. A University of Malaya study found that for arthritis-like symptoms that are not relieved by aspirin and non-steroidal anti-inflammatory drugs (NSAID), chloroquine phosphate (250 mg/day) has given promising results. There is a debate about the appropriateness of chloroquine as treatment for chikungunya. Unpublished studies in cell culture and monkeys show no effect of chloroquine treatment on reduction of chikungunya disease.
+\n\nPreventions\n
+With no vaccine available, the best way to stay chikungunya-free is to avoid mosquitoes. These methods can help you stay free of mosquito bites:
+\n1.Keep skin covered with long sleeve shirts or pants.
+\n2.Use insect repellent with active DEET, picaridin, oil of lemon eucalyptus or IR535. These ingredients create longer protection in the repellent.
+\n3.Use mosquito netting if in an area that’s open to the outdoors.
+\n4.Stay or sleep indoors whenever possible.
+\n5.Wear clothes are gear that’s treated with permethrin or other repellents.
+        </item>
+        <item>Typhoid is a waterborne bacterial infection caused by bacteria called Salmonella. This disease is caused by contaminated food or drinking food or water contaminated with the faeces of an infected person.  Diagnosis is made by any blood, bone marrow or stool cultures and with the Widal test.
+\n\nSymptoms\n
+prolonged high fever, severe abdomen pain, headache; vomits are common symptoms of this disease. The worst part is that the infection of this disease can remain in the gall bladder of the patient even after he/she is cured.
+\n\nPreventive measures\n
+clean drinking water, better sanitation, and better handwashing.
+\n\nTreatments\n
+include antibiotics such as azithromycin, fluoroquinolones or third generation cephalosporin
+</item>
+        <item>One of the most common monsoon-related diseases, malaria, is caused by certain species of mosquitoes breeding in the dirty water. Since, there is a problem of water logging during the rainy season, mosquitoes get conducive conditions to breed .This disease is spread by Female Anopheles mosquito. Most deaths are caused by P. falciparum and is the most dangerous type of malaria also known as Cerebral malaria. Other forms of malaria are P. vivax, P. ovale, and P. malariae\n
+Malaria is typically diagnosed by the microscopic examination of blood using blood films, or with antigen-based rapid diagnostic tests.
+\n\nSymptoms\n
+fever, body ache, chills, and sweating.
+If untreated, it can lead to complications like jaundice, severe anaemia or even liver and kidney failure. Malaria is treated with antimalarial medications successfully.
+\n\nPreventive measures\n
+Take an antimalarial drug as a precautionary measure in mosquito prone areas.
+\mAlso take measures to prevent mosquito bites such as wearing full sleeve clothing.
+\mApplication of antirepellant mosquito creams and Electronic mosquito repellent devices can be used during the monsoon season to avoid mosquito’s at home.
+\n\nTreatments\n
+Malaria is treated with antimalarial medications; the ones used depends on the type and severity of the disease. Simple or uncomplicated malaria may be treated with oral medications. The most effective treatment for P. falciparum infection is the use of artemisinins in combination with other antimalarials (known as artemisinin-combination therapy, or ACT), which decreases resistance to any single drug component. Recommended treatment for severe malaria is the intravenous use of antimalarial drugs. For severe malaria, parenteral artesunate was superior to quinine in both children and adults.</item>
+        <item>Gastroenteritis and food poisoning are quite common during the monsoon season, and the high humidity helps in the growth of disease-causing bacteria.
+\n\nSymptoms\n
+stomach cramps, nausea, vomiting or diarrhoea. Fever can develop and one may feel sense of malaise and weakness through the course of the illness.
+\n\nTreatment\n
+keep yourself hydrated at all times and bland diet is recommended such as rice, curds, fruits such as banana, apple. Rice kanji water or coconut water is also good line of treatment for hydration. ORS is generally recommended. Course of treatment is mainly to prevent dehydration, control fever. Antibiotics are prescribed after evaluation of the condition of the patient. Antiprotozoal can also be prescribed accordingly.
+\n\nPreventive measures\n
+Try and avoid eating raw food like salads because it is difficult to ascertain whether they have been washed, cleaned and stored at the right temperature
+\nAvoid roadside food which may be made in contaminated water and trigger diarrhoea.</item>
+        <item>Dehydration is a typical summer illness. Hot and humid weather leads to dehydration in the body due to several reasons. Dehydration occurs when there is a mismatch and the amount of water leaving the body is higher than the amount being taken in.
+\n\nCauses of Dehydration\n
+Summer is not the only culprit for this condition but definitely the biggest risk season. The mismatch in the amount of water inside the body can happen because of several reasons
+\nDiarrhoea:This is the commonest reason when a person loses excess water. Frequent, watery stools lead to heavy water loss from the body. Summer time is host to several bacterial and viral infections causing loose stools.
+\nVomiting: Another huge water drain out from the body is by vomiting which are usually accompanied by loose stools as a result of any infection.
+\nSweating: Sometimes excessive sweating can lead to dipped water content in the body. Extreme physical activity in hot weather signals the body to produce more sweat in order to keep it cool but it also can cause dehydration if water is not replenished along with.
+\n\nSigns of Dehydration\n
+Dehydration becomes quite evident. You may begin to feel the following:
+\nDry tongue and mouth
+\nFlushing of skin Fatigue, extreme tiredness
+\nLoss of appetite
+\nIntolerance towards heat
+\nLight-headedness
+\nExcessive thirst
+\nUrine turning dark
+\nDry cough
+\n\nTreatment\n
+The ideal way to avoid dehydration is to drink fluids before getting thirsty. Thirst is usually a late sign dehydrated and should not be waited for.
+To avoid dehydration in summer, people who are planning for heavy physical activity outdoors should drink minimum 1.5 litres of water 2 hours before the activity. After the activity, they should again consume enough fluids.
+If diarrhoea and vomiting are observed, immediate check is needed. Fluid replacement may be needed, oral or through IV line. Dehydration Prevention and Tips:
+\n\nPrevention\n
+Avoid heavy, strenuous workouts in hot climate
+\nKeep drinking water and other fluids at regular intervals
+\nDiarrhoea and vomiting should be kept under check
+\nFluid replacement should be done, if loose stools become frequent
+\nAvoid high salt and high protein diet</item>
+        <item>Heat stroke is a condition where body\'s temperature gets elevated drastically. During summer time, it is one of the commonest conditions affecting people in India. As the sun turns blazing hot and piercing hot wind blows all through the day, people get gripped with this summer disease. Infants and young children, athletes, outdoor workers, and old people are at greatest risk for getting a heat stroke when exposed to extreme hot conditions When severe, it could be a medical emergency and needs immediate management and support.
+\n\nCauses of Heat Stroke\n
+Heat stroke happens due to prolonged exposure to the sun, when the weather is exceptionally hot and humid. When body\'s cooling system fails and it becomes overwhelmed with excessive heat, the condition occurs. Dehydration due to excessive water loss (because of sweating) causes the maximum damage in this situation. When body\'s need of fluid is not replenished quickly, it begins to show symptoms of dehydration and may result in damaging effects.
+\n\nSymptoms of Heat Stroke\n
+The symptoms of heat stroke include
+\nHigh body temperature
+\nNausea, vomiting, Headache, fatigue and dizziness
+\nAltered orientation Flushed and red skin
+\nIncreased breath rate Less urination
+\nDark coloured urine
+\n\nPrevention and Treatment of Heat Stroke\n
+Avoid direct sun exposure and being in a hot and humid atmosphere for long durations
+\nCover head and face, wear loose fitting and light coloured clothes and drink plenty of fluids
+\nTry to remain indoors between 11 am to 4 pm, when heat is at its peak
+\nAvoid becoming dehydrated
+\nStay away from vigorous physical activities during hot day</item>
+        <item>Symptoms\n
+Kids start feeling weak, sniff quite a few times, complain of a headache, body ache, cough and lack of taste.
+\n\nCauses\n
+General impact on kids with low immunity due to change in weather, exposure to an infected individual\'s cough.
+\n\nPrecautions\n
+Avoid feeding your child anything cold, or that causes mucous such as curd or banana especially at night. Feed kids more of vitamin C enriched fruits and vegetables such as oranges, pineapples and nuts to boost immunity.
+\n\nTreatment\n
+Home-made kaadha prepared with tulsi leaves, peppercorns, grated ginger, and honey. Paracetamol, warm simple food and in severe cases, consult a doctor.</item>
+        <item>Symptoms\n
+Irritation of the throat, pain in the throat, enlarged tonsils, unable to gulp food or liquids.
+\n\nCauses\n
+Eating anything cold, virus or bacteria in the air.
+\n\nPrecautions\n
+Avoid feeding your child anything cold when the weather is cold. Cover their ears and neck when the wind is too strong, or before sleeping under a fan/ AC.  Feed kids more of vitamin C enriched fruits and vegetables and nuts to boost immunity. Gargle with warm water every day with a hint of salt.
+\n\nTreatment\n
+Gargle with warm water with a hint of salt. Consult a doctor.</item>
+        <item>Symptoms\n
+Itchy scalp, irritation, headache, scalp turning red, feeling of something walking on the scalp.
+\n\nCauses\n
+Poor hair hygiene, being very close to a person infected with lice/ using their products.
+\n\nPrecautions\nKeep your kids away from a person infected with lice, or refrain them from using their bedding/hair comb etc.
+\n\nTreatment\n
+Anti-lice shampoos and combing. Maintain proper hair hygiene. Disinfecting bedding, towels, and combs.</item>
+        <item>Symptoms\nEar pain, Blocked Ears, Itchy Ears.
+\n\nCauses\nExcessive cold may result into an acute ear infection. Another cause of bacterial ear infection is due to moisture in the ear. A ear infection can occur even overnight, so it is best to identify it at the earliest.
+\n\nPrecautions\nTreat the cold immediately before it hampers the lungs, ears and sinusitis. After a swimming session, shower or beach trip, make sure your child\'s ears are clean and dry.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nA virus that impacts children, mostly under the age of two, bronchiolitis is a swelling and mucus buildup within the smallest lung air passages, according to UMMC.
+The CDC and UMMC recommend washing hands frequently as the easiest way to prevent the spread of any of the illnesses. Disinfect countertops, door knobs, and other frequently touched surfaces often.
+\n\nCauses\nIt most commonly is caused by a viral infection and is spread from person to person when coming in direct contact with nose and throat fluids of someone carrying the virus.
+\n\nPrecautions\nTry to cover your kid\'s mouth in a crowded or polluted space. Make them take steam when experience discomfort in breathing.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nAbdominal pain, diarrhea, excessive flatulence, vomiting, and fever.
+\n\nCauses\nInfected water and food and unclean hands. Your child is highly infectious for as long as she has diarrhea, and the virus can live in her stool for several weeks after that.
+\n\nPrecautions\nBe careful of where your child is eating. Also, make sure the child\'s hand is washed well before he eats.
+\n\nTreatment\nConsult a doctor. Make sure the child is well hydrated with a lot of liquids.</item>
+        <item>Symptoms\nPainful, blister-like sores in the mouth and bumps on the palms, fingers, and soles of the feet, often accompanied by fever. Depending on the severity of the sores, your child may not want to eat, drink, or walk.
+\n\nCauses\nIt is transmitted from one person to another. Usually where hygiene is an issue, like a daycare or school.
+\n\nPrecautions\nAvoid anything tarty, salty or spicy food for your kids. The coxsackievirus can remain in your child\'s stool for several weeks, so wash your hands thoroughly after a diaper change. Make sure the hygiene in the house, daycare/school is well maintained.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nIn the month of December, it\'s not just festive cheer that\'s in the air - there are several airborne diseases that are active during this time of the year till the beginning of Spring. One of the most contagious diseases in the world, chickenpox, is one such disease. The child will have bumps/ blisters that are itchy and contagious, rashes.
+Causes: Infection in the air, direct contact with an infected individual.
+\n\nPrecautions\nTimely vaccination and distance from an infected person. Keeping neem leaves in the house or taking bath with soaked neem leaves also help.
+\n\nTreatment\nIf it is detected at an early stage, light medications can help treat this. Avoid itching, but tap on the infected area instead. Usually, for severe cases, doctors advise stronger medicines and confinement. Always consult a doctor and keep all daily clothes and items used by the infected kid separate.</item>
+    </string-array>
+    <string-array name="medicine_name">
+        <item>Acetaminophen</item>
+        <item>Aspirin</item>
+        <item>Fenoprofen</item>
+        <item>Flurbiprofen</item>
+        <item>Ibuprofen</item>
+        <item>Ketoprofen</item>
+        <item>Nabumetone</item>
+        <item>Naproxen</item>
+    </string-array>
+    <string-array name="medicine_info">
+        <item>Generic Name\n
+Acetaminophen
+\n\nUsed for\n
+Pain relief
+\n\nBrand Name\n
+Tylenol
+\n\nPrecautions\n
+Talk to your doctor before taking medicine that contains acetaminophen.
+\n\nPossible Side Effects\n
+Few side effects if taken as directed, although they may include: changes in blood counts and liver damage.</item>
+        <item>Generic Name\n
+Aspirin
+\n\nUsed for\n
+Pain relief
+\n\nBrand Name\n
+Bayer, Bufferin, Ecotrin
+\n\nPrecautions\n
+Do not use in children younger than age 14 years due to the potential for Reye\'s syndrome (a life-threatening neurological condition)
+\n\nPossible Side Effects\n
+Heartburn, gastrointestinal bleeding, bronchospasm or constriction that causes narrowing of the airways, anaphylaxis (life-threatening allergic reaction), ulcers</item>
+        <item>Generic Name\n
+Fenoprofen
+\n\nUsed for\n
+Prevention of tension headaches; migraines; hormone headaches
+\n\nBrand Name\n
+Nalfon
+\n\nPossible Side Effects\n
+Nausea, diarrhea, indigestion, dizziness, drowsiness</item>
+        <item>Generic Name\n
+Flurbiprofen
+\n\nUsed for\n
+Prevention of tension headaches; migraines. Treatment of tension headache; migraines
+\n\nBrand Name\n
+Ansaid
+\n\nPossible Side Effects\n
+Gastrointestinal upset, drowsiness, dizziness, vision problems, ulcers</item>
+        <item>Generic Name\n
+Ibuprofen
+\n\nUsed for\n
+Treatment of tension headache; migraines
+\n\nBrand Name\n
+Advil, Motrin IB, Nuprin
+\n\nPossible Side Effects\n
+Gastrointestinal upset, gastrointestinal bleeding, nausea, vomiting, rash, liverdamage</item>
+        <item>Generic Name\n
+Ketoprofen
+\n\nUsed for\n
+Prevention of tension headache
+\n\nBrand Name\n
+Actron
+\n\nPossible Side Effects\n
+Gastrointestinal upset, gastrointestinal bleeding, nausea, vomiting, rash, liverdamage</item>
+        <item>Generic Name\n
+Nabumetone
+\n\nUsed for\n
+Prevention of tension headaches; migraines
+\n\nBrand Name\n
+Relafen
+\n\nPossible Side Effects\n
+Constipation, heartburn, diarrhea, nausea, vomiting</item>
+        <item>Generic Name\n
+Naproxen
+\n\nUsed for\n
+Prevention of tension headaches; hormone headaches. Treatment of migraines
+\n\nBrand Name\n
+Aleve
+\n\nPossible Side Effects\n
+Prevention of tension headaches; hormone headaches. Treatment of migraines</item>
+    </string-array>
+    <string-array name="seasonal_disease_name">
+        <item>Typhoid</item>
+        <item>Malaria</item>
+        <item>Gastroenteritis</item>
+        <item>Dehydration</item>
+        <item>Heat Stroke</item>
+        <item>Common Cold and Fever</item>
+        <item>Tonsil Infection</item>
+        <item>Lice</item>
+        <item>Acute Ear Infection</item>
+        <item>Bronchiolitis</item>
+        <item>Stomach Flu (Viral Gastroenteritis)</item>
+        <item>Hand, Foot and Mouth Disease</item>
+        <item>Chicken Pox</item>
+    </string-array>
+    <string-array name="seasonal_disease_info">
+        <item>Typhoid is a waterborne bacterial infection caused by bacteria called Salmonella. This disease is caused by contaminated food or drinking food or water contaminated with the faeces of an infected person.  Diagnosis is made by any blood, bone marrow or stool cultures and with the Widal test.
+\n\nSymptoms\n
+prolonged high fever, severe abdomen pain, headache; vomits are common symptoms of this disease. The worst part is that the infection of this disease can remain in the gall bladder of the patient even after he/she is cured.
+\n\nPreventive measures\n
+clean drinking water, better sanitation, and better handwashing.
+\n\nTreatments\n
+include antibiotics such as azithromycin, fluoroquinolones or third generation cephalosporin
+</item>
+        <item>One of the most common monsoon-related diseases, malaria, is caused by certain species of mosquitoes breeding in the dirty water. Since, there is a problem of water logging during the rainy season, mosquitoes get conducive conditions to breed .This disease is spread by Female Anopheles mosquito. Most deaths are caused by P. falciparum and is the most dangerous type of malaria also known as Cerebral malaria. Other forms of malaria are P. vivax, P. ovale, and P. malariae\n
+Malaria is typically diagnosed by the microscopic examination of blood using blood films, or with antigen-based rapid diagnostic tests.
+\n\nSymptoms\n
+fever, body ache, chills, and sweating.
+If untreated, it can lead to complications like jaundice, severe anaemia or even liver and kidney failure. Malaria is treated with antimalarial medications successfully.
+\n\nPreventive measures\n
+Take an antimalarial drug as a precautionary measure in mosquito prone areas.
+\mAlso take measures to prevent mosquito bites such as wearing full sleeve clothing.
+\mApplication of antirepellant mosquito creams and Electronic mosquito repellent devices can be used during the monsoon season to avoid mosquito’s at home.
+\n\nTreatments\n
+Malaria is treated with antimalarial medications; the ones used depends on the type and severity of the disease. Simple or uncomplicated malaria may be treated with oral medications. The most effective treatment for P. falciparum infection is the use of artemisinins in combination with other antimalarials (known as artemisinin-combination therapy, or ACT), which decreases resistance to any single drug component. Recommended treatment for severe malaria is the intravenous use of antimalarial drugs. For severe malaria, parenteral artesunate was superior to quinine in both children and adults.</item>
+        <item>Gastroenteritis and food poisoning are quite common during the monsoon season, and the high humidity helps in the growth of disease-causing bacteria.
+\n\nSymptoms\n
+stomach cramps, nausea, vomiting or diarrhoea. Fever can develop and one may feel sense of malaise and weakness through the course of the illness.
+\n\nTreatment\n
+keep yourself hydrated at all times and bland diet is recommended such as rice, curds, fruits such as banana, apple. Rice kanji water or coconut water is also good line of treatment for hydration. ORS is generally recommended. Course of treatment is mainly to prevent dehydration, control fever. Antibiotics are prescribed after evaluation of the condition of the patient. Antiprotozoal can also be prescribed accordingly.
+\n\nPreventive measures\n
+Try and avoid eating raw food like salads because it is difficult to ascertain whether they have been washed, cleaned and stored at the right temperature
+\nAvoid roadside food which may be made in contaminated water and trigger diarrhoea.</item>
+        <item>Dehydration is a typical summer illness. Hot and humid weather leads to dehydration in the body due to several reasons. Dehydration occurs when there is a mismatch and the amount of water leaving the body is higher than the amount being taken in.
+\n\nCauses of Dehydration\n
+Summer is not the only culprit for this condition but definitely the biggest risk season. The mismatch in the amount of water inside the body can happen because of several reasons
+\nDiarrhoea:This is the commonest reason when a person loses excess water. Frequent, watery stools lead to heavy water loss from the body. Summer time is host to several bacterial and viral infections causing loose stools.
+\nVomiting: Another huge water drain out from the body is by vomiting which are usually accompanied by loose stools as a result of any infection.
+\nSweating: Sometimes excessive sweating can lead to dipped water content in the body. Extreme physical activity in hot weather signals the body to produce more sweat in order to keep it cool but it also can cause dehydration if water is not replenished along with.
+\n\nSigns of Dehydration\n
+Dehydration becomes quite evident. You may begin to feel the following:
+\nDry tongue and mouth
+\nFlushing of skin Fatigue, extreme tiredness
+\nLoss of appetite
+\nIntolerance towards heat
+\nLight-headedness
+\nExcessive thirst
+\nUrine turning dark
+\nDry cough
+\n\nTreatment\n
+The ideal way to avoid dehydration is to drink fluids before getting thirsty. Thirst is usually a late sign dehydrated and should not be waited for.
+To avoid dehydration in summer, people who are planning for heavy physical activity outdoors should drink minimum 1.5 litres of water 2 hours before the activity. After the activity, they should again consume enough fluids.
+If diarrhoea and vomiting are observed, immediate check is needed. Fluid replacement may be needed, oral or through IV line. Dehydration Prevention and Tips:
+\n\nPrevention\n
+Avoid heavy, strenuous workouts in hot climate
+\nKeep drinking water and other fluids at regular intervals
+\nDiarrhoea and vomiting should be kept under check
+\nFluid replacement should be done, if loose stools become frequent
+\nAvoid high salt and high protein diet</item>
+        <item>Heat stroke is a condition where body\'s temperature gets elevated drastically. During summer time, it is one of the commonest conditions affecting people in India. As the sun turns blazing hot and piercing hot wind blows all through the day, people get gripped with this summer disease. Infants and young children, athletes, outdoor workers, and old people are at greatest risk for getting a heat stroke when exposed to extreme hot conditions When severe, it could be a medical emergency and needs immediate management and support.
+\n\nCauses of Heat Stroke\n
+Heat stroke happens due to prolonged exposure to the sun, when the weather is exceptionally hot and humid. When body\'s cooling system fails and it becomes overwhelmed with excessive heat, the condition occurs. Dehydration due to excessive water loss (because of sweating) causes the maximum damage in this situation. When body\'s need of fluid is not replenished quickly, it begins to show symptoms of dehydration and may result in damaging effects.
+\n\nSymptoms of Heat Stroke\n
+The symptoms of heat stroke include
+\nHigh body temperature
+\nNausea, vomiting, Headache, fatigue and dizziness
+\nAltered orientation Flushed and red skin
+\nIncreased breath rate Less urination
+\nDark coloured urine
+\n\nPrevention and Treatment of Heat Stroke\n
+Avoid direct sun exposure and being in a hot and humid atmosphere for long durations
+\nCover head and face, wear loose fitting and light coloured clothes and drink plenty of fluids
+\nTry to remain indoors between 11 am to 4 pm, when heat is at its peak
+\nAvoid becoming dehydrated
+\nStay away from vigorous physical activities during hot day</item>
+        <item>Symptoms\n
+Kids start feeling weak, sniff quite a few times, complain of a headache, body ache, cough and lack of taste.
+\n\nCauses\n
+General impact on kids with low immunity due to change in weather, exposure to an infected individual\'s cough.
+\n\nPrecautions\n
+Avoid feeding your child anything cold, or that causes mucous such as curd or banana especially at night. Feed kids more of vitamin C enriched fruits and vegetables such as oranges, pineapples and nuts to boost immunity.
+\n\nTreatment\n
+Home-made kaadha prepared with tulsi leaves, peppercorns, grated ginger, and honey. Paracetamol, warm simple food and in severe cases, consult a doctor.</item>
+        <item>Symptoms\n
+Irritation of the throat, pain in the throat, enlarged tonsils, unable to gulp food or liquids.
+\n\nCauses\n
+Eating anything cold, virus or bacteria in the air.
+\n\nPrecautions\n
+Avoid feeding your child anything cold when the weather is cold. Cover their ears and neck when the wind is too strong, or before sleeping under a fan/ AC.  Feed kids more of vitamin C enriched fruits and vegetables and nuts to boost immunity. Gargle with warm water every day with a hint of salt.
+\n\nTreatment\n
+Gargle with warm water with a hint of salt. Consult a doctor.</item>
+        <item>Symptoms\n
+Itchy scalp, irritation, headache, scalp turning red, feeling of something walking on the scalp.
+\n\nCauses\n
+Poor hair hygiene, being very close to a person infected with lice/ using their products.
+\n\nPrecautions\nKeep your kids away from a person infected with lice, or refrain them from using their bedding/hair comb etc.
+\n\nTreatment\n
+Anti-lice shampoos and combing. Maintain proper hair hygiene. Disinfecting bedding, towels, and combs.</item>
+        <item>Symptoms\nEar pain, Blocked Ears, Itchy Ears.
+\n\nCauses\nExcessive cold may result into an acute ear infection. Another cause of bacterial ear infection is due to moisture in the ear. A ear infection can occur even overnight, so it is best to identify it at the earliest.
+\n\nPrecautions\nTreat the cold immediately before it hampers the lungs, ears and sinusitis. After a swimming session, shower or beach trip, make sure your child\'s ears are clean and dry.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nA virus that impacts children, mostly under the age of two, bronchiolitis is a swelling and mucus buildup within the smallest lung air passages, according to UMMC.
+The CDC and UMMC recommend washing hands frequently as the easiest way to prevent the spread of any of the illnesses. Disinfect countertops, door knobs, and other frequently touched surfaces often.
+\n\nCauses\nIt most commonly is caused by a viral infection and is spread from person to person when coming in direct contact with nose and throat fluids of someone carrying the virus.
+\n\nPrecautions\nTry to cover your kid\'s mouth in a crowded or polluted space. Make them take steam when experience discomfort in breathing.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nAbdominal pain, diarrhea, excessive flatulence, vomiting, and fever.
+\n\nCauses\nInfected water and food and unclean hands. Your child is highly infectious for as long as she has diarrhea, and the virus can live in her stool for several weeks after that.
+\n\nPrecautions\nBe careful of where your child is eating. Also, make sure the child\'s hand is washed well before he eats.
+\n\nTreatment\nConsult a doctor. Make sure the child is well hydrated with a lot of liquids.</item>
+        <item>Symptoms\nPainful, blister-like sores in the mouth and bumps on the palms, fingers, and soles of the feet, often accompanied by fever. Depending on the severity of the sores, your child may not want to eat, drink, or walk.
+\n\nCauses\nIt is transmitted from one person to another. Usually where hygiene is an issue, like a daycare or school.
+\n\nPrecautions\nAvoid anything tarty, salty or spicy food for your kids. The coxsackievirus can remain in your child\'s stool for several weeks, so wash your hands thoroughly after a diaper change. Make sure the hygiene in the house, daycare/school is well maintained.
+\n\nTreatment\nConsult a doctor.</item>
+        <item>Symptoms\nIn the month of December, it\'s not just festive cheer that\'s in the air - there are several airborne diseases that are active during this time of the year till the beginning of Spring. One of the most contagious diseases in the world, chickenpox, is one such disease. The child will have bumps/ blisters that are itchy and contagious, rashes.
+Causes: Infection in the air, direct contact with an infected individual.
+\n\nPrecautions\nTimely vaccination and distance from an infected person. Keeping neem leaves in the house or taking bath with soaked neem leaves also help.
+\n\nTreatment\nIf it is detected at an early stage, light medications can help treat this. Avoid itching, but tap on the infected area instead. Usually, for severe cases, doctors advise stronger medicines and confinement. Always consult a doctor and keep all daily clothes and items used by the infected kid separate.</item>
+    </string-array>
+</resources>

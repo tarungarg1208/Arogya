@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.arogyademo.SignInSignUpActivity">
+    <item
+        android:id="@+id/ID_SignInSignUpOptions_Recover"
+        android:title="Recover Password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ID_SignInSignUpOptions_About"
+        android:title="About Us" />
+</menu>

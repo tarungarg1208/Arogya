@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4_rain"
+    tools:context=".AfterFrontPage">
+
+
+    <ImageView
+        android:id="@+id/ID_AFP_Top_IV"
+        android:layout_width="333dp"
+        android:layout_height="339dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/secondactivitytopimage" />
+
+    <TextView
+        android:id="@+id/ID_AFP_Title_TV"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Arogya HealthCare"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_AFP_Top_IV" />
+
+    <TextView
+        android:id="@+id/ID_AFP_SubTitle_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:lineSpacingExtra="8dp"
+        android:text="Complete HealthCare Application"
+        android:textAlignment="center"
+        android:textColor="#4C5067"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_AFP_Title_TV" />
+
+    <View
+        android:id="@+id/ID_AFP_ProgressBarStart_View"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#161C3E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/ID_AFP_ProgressBarStop_View"
+        android:layout_width="209dp"
+        android:layout_height="59dp"
+        android:background="#FEBFAB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ID_AFP_SignInSignUp_TV"
+        android:layout_width="195dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:text="Sign In/Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ID_AFP_ProgressBarStart_View" />
+
+</android.support.constraint.ConstraintLayout>
